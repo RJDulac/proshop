@@ -26,19 +26,15 @@ const orderSchema = mongoose.Schema(
       postalCode: { type: String, required: true },
       country: { type: String, required: true },
     },
-    password: {
-      type: String,
-      required: true,
-    },
     paymentMethod: {
       type: String,
       required: true,
     },
     paymentResult: {
-      id: { type: string },
-      status: { type: string },
-      update_time: { type: string },
-      email_address: { type: string },
+      id: { type: String },
+      status: { type: String },
+      update_time: { type: String },
+      email_address: { type: String },
     },
     taxPrice: {
       type: Number,
